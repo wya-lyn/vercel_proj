@@ -38,12 +38,12 @@ hero:
       link: https://ai.letfate.com        
 
 features:
-  - title: 山
+  - title: 🏔️ 山
     link: 山/博山篇
     details: 包含了修心养性，锻鍊体魄的祕术。古代修道大多选择宁静的深山修行，这是(山)字的由来。
     linkText: 查看
 
-  - title: 医
+  - title: 💊 医
     link: 医/八段锦
     details: 包含了治病的祕术，其方法和现代的医学不同。(山)和(医)是为了(生、老、病、死)这四种人生。不可避免的痛苦，谋求解脱而产生的祕术。
     linkText: 查看

@@ -346,3 +346,101 @@ figure figcaption {
 figure figcaption a {
     color: var(--vp-c-text-3) !important;
 }
+
+/**
+ * Five Arts (五术) - Differentiated Color Scheme
+ * -------------------------------------------------------------------------- */
+
+:root {
+    /* 山 - Mountain/Feng Shui - Brown/Tan */
+    --c-shan-primary: #8B7355;
+    --c-shan-light: #D4A574;
+    --c-shan-lighter: rgba(212, 165, 116, 0.1);
+    
+    /* 医 - Medicine - Red */
+    --c-yi-primary: #E63946;
+    --c-yi-light: #F77F88;
+    --c-yi-lighter: rgba(230, 57, 70, 0.1);
+    
+    /* 命 - Destiny/Astrology - Purple */
+    --c-ming-primary: #6A4C93;
+    --c-ming-light: #9D84B7;
+    --c-ming-lighter: rgba(106, 76, 147, 0.1);
+    
+    /* 相 - Physiognomy - Blue */
+    --c-xiang-primary: #2E86AB;
+    --c-xiang-light: #5BA3D0;
+    --c-xiang-lighter: rgba(46, 134, 171, 0.1);
+    
+    /* 卜 - Divination - Green */
+    --c-bo-primary: #2D6A4F;
+    --c-bo-light: #52B788;
+    --c-bo-lighter: rgba(45, 106, 79, 0.1);
+}
+
+/* Feature Cards - Five Arts Differentiated Styling */
+.VPFeatures > .VPFeature:nth-child(1) {
+    border-left: 4px solid var(--c-shan-primary);
+    background: linear-gradient(135deg, var(--c-shan-lighter) 0%, transparent 100%);
+}
+
+.VPFeatures > .VPFeature:nth-child(1) .title {
+    color: var(--c-shan-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(2) {
+    border-left: 4px solid var(--c-yi-primary);
+    background: linear-gradient(135deg, var(--c-yi-lighter) 0%, transparent 100%);
+}
+
+.VPFeatures > .VPFeature:nth-child(2) .title {
+    color: var(--c-yi-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(3) {
+    border-left: 4px solid var(--c-ming-primary);
+    background: linear-gradient(135deg, var(--c-ming-lighter) 0%, transparent 100%);
+}
+
+.VPFeatures > .VPFeature:nth-child(3) .title {
+    color: var(--c-ming-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(4) {
+    border-left: 4px solid var(--c-xiang-primary);
+    background: linear-gradient(135deg, var(--c-xiang-lighter) 0%, transparent 100%);
+}
+
+.VPFeatures > .VPFeature:nth-child(4) .title {
+    color: var(--c-xiang-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(5) {
+    border-left: 4px solid var(--c-bo-primary);
+    background: linear-gradient(135deg, var(--c-bo-lighter) 0%, transparent 100%);
+}
+
+.VPFeatures > .VPFeature:nth-child(5) .title {
+    color: var(--c-bo-primary);
+}
+
+/* Optional: Feature Link Styling */
+.VPFeatures > .VPFeature:nth-child(1) a {
+    color: var(--c-shan-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(2) a {
+    color: var(--c-yi-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(3) a {
+    color: var(--c-ming-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(4) a {
+    color: var(--c-xiang-primary);
+}
+
+.VPFeatures > .VPFeature:nth-child(5) a {
+    color: var(--c-bo-primary);
+}
