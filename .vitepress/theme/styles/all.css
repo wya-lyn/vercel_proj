@@ -378,69 +378,122 @@ figure figcaption a {
     --c-bo-lighter: rgba(45, 106, 79, 0.1);
 }
 
-/* Feature Cards - Five Arts Differentiated Styling */
-.VPFeatures > .VPFeature:nth-child(1) {
+/* Feature Cards - Five Arts Differentiated Styling (Compatible with @theojs/lumen) */
+
+/* Using more generic selectors for @theojs/lumen Home component */
+.theo-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border-left: 4px solid;
+}
+
+.feature-card:nth-child(1) {
+    border-left-color: var(--c-shan-primary);
+    background: linear-gradient(135deg, var(--c-shan-lighter) 0%, transparent 100%);
+}
+
+.feature-card:nth-child(1) h3,
+.feature-card:nth-child(1) .title {
+    color: var(--c-shan-primary);
+}
+
+.feature-card:nth-child(2) {
+    border-left-color: var(--c-yi-primary);
+    background: linear-gradient(135deg, var(--c-yi-lighter) 0%, transparent 100%);
+}
+
+.feature-card:nth-child(2) h3,
+.feature-card:nth-child(2) .title {
+    color: var(--c-yi-primary);
+}
+
+.feature-card:nth-child(3) {
+    border-left-color: var(--c-ming-primary);
+    background: linear-gradient(135deg, var(--c-ming-lighter) 0%, transparent 100%);
+}
+
+.feature-card:nth-child(3) h3,
+.feature-card:nth-child(3) .title {
+    color: var(--c-ming-primary);
+}
+
+.feature-card:nth-child(4) {
+    border-left-color: var(--c-xiang-primary);
+    background: linear-gradient(135deg, var(--c-xiang-lighter) 0%, transparent 100%);
+}
+
+.feature-card:nth-child(4) h3,
+.feature-card:nth-child(4) .title {
+    color: var(--c-xiang-primary);
+}
+
+.feature-card:nth-child(5) {
+    border-left-color: var(--c-bo-primary);
+    background: linear-gradient(135deg, var(--c-bo-lighter) 0%, transparent 100%);
+}
+
+.feature-card:nth-child(5) h3,
+.feature-card:nth-child(5) .title {
+    color: var(--c-bo-primary);
+}
+
+/* Links styling */
+.feature-card:nth-child(1) a { color: var(--c-shan-primary); }
+.feature-card:nth-child(2) a { color: var(--c-yi-primary); }
+.feature-card:nth-child(3) a { color: var(--c-ming-primary); }
+.feature-card:nth-child(4) a { color: var(--c-xiang-primary); }
+.feature-card:nth-child(5) a { color: var(--c-bo-primary); }
+
+/* Alternative: Direct selectors for Home component from @theojs/lumen */
+.home-feature:nth-child(1) {
     border-left: 4px solid var(--c-shan-primary);
     background: linear-gradient(135deg, var(--c-shan-lighter) 0%, transparent 100%);
 }
 
-.VPFeatures > .VPFeature:nth-child(1) .title {
+.home-feature:nth-child(1) > * {
     color: var(--c-shan-primary);
 }
 
-.VPFeatures > .VPFeature:nth-child(2) {
+.home-feature:nth-child(2) {
     border-left: 4px solid var(--c-yi-primary);
     background: linear-gradient(135deg, var(--c-yi-lighter) 0%, transparent 100%);
 }
 
-.VPFeatures > .VPFeature:nth-child(2) .title {
+.home-feature:nth-child(2) > * {
     color: var(--c-yi-primary);
 }
 
-.VPFeatures > .VPFeature:nth-child(3) {
+.home-feature:nth-child(3) {
     border-left: 4px solid var(--c-ming-primary);
     background: linear-gradient(135deg, var(--c-ming-lighter) 0%, transparent 100%);
 }
 
-.VPFeatures > .VPFeature:nth-child(3) .title {
+.home-feature:nth-child(3) > * {
     color: var(--c-ming-primary);
 }
 
-.VPFeatures > .VPFeature:nth-child(4) {
+.home-feature:nth-child(4) {
     border-left: 4px solid var(--c-xiang-primary);
     background: linear-gradient(135deg, var(--c-xiang-lighter) 0%, transparent 100%);
 }
 
-.VPFeatures > .VPFeature:nth-child(4) .title {
+.home-feature:nth-child(4) > * {
     color: var(--c-xiang-primary);
 }
 
-.VPFeatures > .VPFeature:nth-child(5) {
+.home-feature:nth-child(5) {
     border-left: 4px solid var(--c-bo-primary);
     background: linear-gradient(135deg, var(--c-bo-lighter) 0%, transparent 100%);
 }
 
-.VPFeatures > .VPFeature:nth-child(5) .title {
-    color: var(--c-bo-primary);
-}
-
-/* Optional: Feature Link Styling */
-.VPFeatures > .VPFeature:nth-child(1) a {
-    color: var(--c-shan-primary);
-}
-
-.VPFeatures > .VPFeature:nth-child(2) a {
-    color: var(--c-yi-primary);
-}
-
-.VPFeatures > .VPFeature:nth-child(3) a {
-    color: var(--c-ming-primary);
-}
-
-.VPFeatures > .VPFeature:nth-child(4) a {
-    color: var(--c-xiang-primary);
-}
-
-.VPFeatures > .VPFeature:nth-child(5) a {
+.home-feature:nth-child(5) > * {
     color: var(--c-bo-primary);
 }
