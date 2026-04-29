@@ -29,6 +29,9 @@ tmp/
 .env.*.local
 .env
 
+# Vercel配置
+.vercel
+
 # 编辑器和IDE生成的文件
 .vscode/
 .idea/
